@@ -2,7 +2,7 @@
 .appointment{
 min-height:75vh;
 padding:50px 20px;
-background:red !important;
+background:#f4f7ff;
 direction:rtl;
 display:flex;
 flex-direction:column;
