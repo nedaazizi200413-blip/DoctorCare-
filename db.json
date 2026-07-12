@@ -1,0 +1,108 @@
+{
+  "doctors": [
+    {
+      "id": "1",
+      "name": "داکتر محمد نعیم حمید",
+      "speciality": "متخصص جراحی و امراض چشم",
+      "experience": 20,
+      "city": "کابل",
+      "rating": 4.8,
+      "image": "/images/images/doctor13.jpg"
+    },
+    {
+      "id": "2",
+      "name": "داکتر شایسته محمدی",
+      "speciality": "متخصص امراض داخله",
+      "experience": 15,
+      "city": "هرات",
+      "rating": 4.7,
+      "image": "/images/images/doctor5.jpg"
+    },
+    {
+      "id": "3",
+      "name": "داکتر مجتبی صوفی",
+      "speciality": "متخصص اطفال",
+      "experience": 13,
+      "city": "کابل",
+      "rating": 4.6,
+      "image": "/images/images/doctor12.jpg"
+    },
+    {
+      "id": "4",
+      "name": "داکتر فیروزالدین فیروز",
+      "speciality": "متخصص جراحی عمومی",
+      "experience": 25,
+      "city": "کابل",
+      "rating": 4.9,
+      "image": "/images/images/doctor1.jpg"
+    },
+    {
+      "id": "5",
+      "name": "داکتر زلمی زابلی",
+      "speciality": "متخصص قلب و عروق",
+      "experience": 22,
+      "city": "کابل",
+      "rating": 4.8,
+      "image": "/images/images/doctor14.jpg"
+    },
+    {
+      "id": "6",
+      "name": "داکتر نقیب الله نقیب",
+      "speciality": "متخصص جراحی مغز و اعصاب",
+      "experience": 18,
+      "city": "کابل",
+      "rating": 4.7,
+      "image": "/images/images/doctor3.jpg"
+    },
+    {
+      "id": "7",
+      "name": "داکتر انیسه صدیقی",
+      "speciality": "متخصص نسایی ولادی",
+      "experience": 16,
+      "city": "کابل",
+      "rating": 4.8,
+      "image": "/images/images/doctor4.jpg"
+    },
+    {
+      "id": "8",
+      "name": "داکتر عبدالقیوم مومند",
+      "speciality": "متخصص استخوان و ارتوپدی",
+      "experience": 19,
+      "city": "مزار شریف",
+      "rating": 4.6,
+      "image": "/images/images/doctor18.jpg"
+    },
+    {
+      "id": "9",
+      "name": "داکتر فرشته اکبری",
+      "speciality": "متخصص پوست و زیبایی",
+      "experience": 12,
+      "city": "کابل",
+      "rating": 4.5,
+      "image": "/images/images/doctor6.jpg"
+    },
+    {
+      "id": "10",
+      "name": "داکتر احمد جاوید",
+      "speciality": "متخصص گوش، حلق و بینی",
+      "experience": 17,
+      "city": "هرات",
+      "rating": 4.7,
+      "image": "/images/images/doctor15.jpg"
+    }
+  ],
+  "appointments": [
+    {
+      "patient_name": "Malaly",
+      "phone": "Njkkk",
+      "doctor": "4",
+      "doctorName": "",
+      "speciality": "",
+      "date": "2026-07-22",
+      "time": "16:50",
+      "reason": "L",
+      "id": "HFYUiwGRouE"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

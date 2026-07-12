@@ -1,0 +1,687 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:tahoma,sans-serif;
+}
+
+body{
+    background:#f5f8ff;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+    display:flex;
+    flex-direction:column-reverse;
+    align-items:center;
+    justify-content:center;
+    padding:40px 20px;
+    gap:20px;
+    background:#f4f7ff;
+    text-align:center;
+}
+
+
+.hero-img{
+    width:280px;
+    max-width:100%;
+}
+
+
+.hero-text{
+    width:100%;
+}
+
+
+.hero h1{
+    font-size:28px;
+    line-height:1.8;
+    color:#2563eb;
+}
+
+
+.hero p{
+    margin-top:15px;
+    color:#64748b;
+    line-height:2;
+    font-size:15px;
+}
+
+
+
+/* ================= SEARCH ================= */
+
+
+.search-box{
+    margin-top:25px;
+    display:flex;
+    gap:10px;
+}
+
+
+.search-box input{
+
+    flex:1;
+    padding:15px;
+
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+    background:white;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+
+.search-box button{
+
+    padding:15px 25px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#2563eb;
+    color:white;
+
+    cursor:pointer;
+}
+
+
+
+/* ================= SPECIALITIES ================= */
+
+
+.specialities{
+
+    padding:20px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+}
+
+
+.speciality-box{
+
+    background:white;
+
+    padding:20px 10px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,.08);
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+
+.speciality-box:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+/* ================= POPULAR DOCTORS ================= */
+
+
+.popular-doctors{
+
+    padding:20px;
+
+}
+
+
+.popular-doctors h2{
+
+    text-align:center;
+
+    margin:20px 0;
+
+    color:#1e293b;
+
+}
+
+
+.popular-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.doctor-card{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.1);
+
+}
+
+
+
+.doctor-card img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+
+.doctor-card h3{
+
+    margin-top:12px;
+
+    color:#1e293b;
+
+}
+
+
+.doctor-card p{
+
+    margin-top:8px;
+
+    color:#64748b;
+
+}
+
+
+
+.info{
+
+    margin-top:10px;
+
+    color:#475569;
+
+    font-size:14px;
+
+}
+
+
+.stars{
+
+    margin-top:12px;
+
+    color:#fbbf24;
+
+}
+
+
+
+.doctor-card button,
+.doctor-card a{
+
+    display:block;
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+}
+
+
+
+/* ================= OTHER DOCTORS ================= */
+
+
+.other-doctors{
+
+    padding:20px;
+
+}
+
+
+.other-doctors h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    color:#1e293b;
+
+}
+
+
+
+.doctor-row{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    background:white;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,.08);
+
+}
+
+
+
+.doctor-row img{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+
+.doctor-details{
+
+    flex:1;
+
+    text-align:right;
+
+}
+
+
+
+.doctor-details h4{
+
+    color:#1e293b;
+
+}
+
+
+
+.doctor-details p{
+
+    color:#64748b;
+
+    margin-top:5px;
+
+}
+
+
+
+.doctor-row a{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-size:12px;
+
+}
+
+
+
+
+/* ================= DESKTOP ================= */
+
+
+@media(min-width:768px){
+
+
+.hero{
+
+    flex-direction:row;
+
+    text-align:right;
+
+    padding:60px 8%;
+
+}
+
+
+.hero-text{
+
+    width:50%;
+
+}
+
+
+.hero-img{
+
+    width:350px;
+
+}
+
+
+.specialities{
+
+    grid-template-columns:
+    repeat(6,1fr);
+
+}
+
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:500px){
+
+
+.search-box{
+
+    flex-direction:column;
+
+}
+
+
+.search-box button{
+
+    width:100%;
+
+}
+
+
+.doctor-row{
+
+    height:auto;
+
+}
+
+
+.specialities{
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
+
+}
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+padding:50px 20px;
+direction:ltr;
+}
+
+
+/* عکس سمت چپ */
+
+.hero-image{
+width:45%;
+text-align:center;
+}
+
+
+.hero-img{
+width:350px;
+max-width:100%;
+}
+
+
+
+/* متن سمت راست */
+
+.hero-text{
+width:55%;
+direction:rtl;
+text-align:right;
+}
+
+
+.hero-text h1{
+font-size:35px;
+color:#2563eb;
+line-height:1.7;
+}
+
+
+.hero-text p{
+color:#64748b;
+line-height:2;
+margin-top:15px;
+}
+
+
+
+/* موبایل */
+
+@media(max-width:768px){
+
+.hero{
+
+flex-direction:column;
+padding:30px 20px;
+text-align:center;
+
+}
+
+
+/* عکس اول */
+
+.hero-image{
+
+order:1;
+width:100%;
+
+}
+
+
+/* متن بعد از عکس */
+
+.hero-text{
+
+order:2;
+width:100%;
+text-align:center;
+
+}
+
+
+.hero-img{
+
+width:250px;
+
+}
+
+
+.hero-text h1{
+
+font-size:26px;
+
+}
+
+
+}
+.other-doctors{
+width:90%;
+margin:50px auto;
+direction:rtl;
+}
+
+.other-doctors h2{
+text-align:center;
+margin-bottom:30px;
+font-size:30px;
+}
+
+
+.doctor-row{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+direction:rtl;
+}
+
+
+.doctor-row img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+}
+
+
+.doctor-details{
+flex:1;
+text-align:right;
+}
+
+
+.doctor-details h4{
+font-size:20px;
+margin-bottom:8px;
+color:#222;
+}
+
+
+.doctor-details p{
+color:#555;
+margin-bottom:10px;
+}
+
+
+.info{
+display:flex;
+align-items:center;
+gap:8px;
+margin:8px 0;
+color:#444;
+}
+
+
+.info i{
+color:#0d6efd;
+}
+
+
+.stars{
+margin-top:10px;
+font-size:15px;
+}
+
+
+.doctor-row a{
+background:#0d6efd;
+color:white;
+padding:10px 20px;
+border-radius:10px;
+text-decoration:none;
+white-space:nowrap;
+}
+
+
+
+/* موبایل */
+
+@media(max-width:768px){
+
+.other-doctors{
+width:95%;
+}
+
+
+.other-doctors h2{
+font-size:24px;
+}
+
+
+.doctor-row{
+
+padding:12px;
+gap:10px;
+border-radius:15px;
+
+}
+
+
+.doctor-row img{
+
+width:70px;
+height:70px;
+
+}
+
+
+.doctor-details h4{
+
+font-size:14px;
+
+}
+
+
+.doctor-details p{
+
+font-size:12px;
+
+}
+
+
+.info{
+
+font-size:11px;
+margin:4
