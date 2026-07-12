@@ -9,7 +9,7 @@ const [appointments,setAppointments]=useState([]);
 
 useEffect(()=>{
 
-axios.get("http://localhost:5000/appointments")
+axios.get("https://doctorcare-api-jr6s.onrender.com/appointments")
 .then(res=>{
 setAppointments(res.data);
 })
@@ -25,7 +25,7 @@ const deleteAppointment=(id)=>{
 if(window.confirm("آیا مطمئن هستید؟")){
 
 axios.delete(
-`http://localhost:5000/appointments/${id}`
+`https://doctorcare-api-jr6s.onrender.com/appointments/${id}`
 )
 .then(()=>{
 setAppointments(

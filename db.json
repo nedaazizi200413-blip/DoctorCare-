@@ -7,7 +7,7 @@
       "experience": 20,
       "city": "کابل",
       "rating": 4.8,
-      "image": "/images/images/doctor13.jpg"
+      "image": "/DoctorCare-/images/images/doctor13.jpg"
     },
     {
       "id": "2",
@@ -16,7 +16,7 @@
       "experience": 15,
       "city": "هرات",
       "rating": 4.7,
-      "image": "/images/images/doctor5.jpg"
+      "image": "/DoctorCare-/images/images/doctor5.jpg"
     },
     {
       "id": "3",
@@ -25,7 +25,7 @@
       "experience": 13,
       "city": "کابل",
       "rating": 4.6,
-      "image": "/images/images/doctor12.jpg"
+      "image": "/DoctorCare-/images/images/doctor12.jpg"
     },
     {
       "id": "4",
@@ -34,7 +34,7 @@
       "experience": 25,
       "city": "کابل",
       "rating": 4.9,
-      "image": "/images/images/doctor1.jpg"
+      "image": "/DoctorCare-/images/images/doctor1.jpg"
     },
     {
       "id": "5",
@@ -43,7 +43,7 @@
       "experience": 22,
       "city": "کابل",
       "rating": 4.8,
-      "image": "/images/images/doctor14.jpg"
+      "image": "/DoctorCare-/images/images/doctor14.jpg"
     },
     {
       "id": "6",
@@ -52,7 +52,7 @@
       "experience": 18,
       "city": "کابل",
       "rating": 4.7,
-      "image": "/images/images/doctor3.jpg"
+      "image": "/DoctorCare-/images/images/doctor3.jpg"
     },
     {
       "id": "7",
@@ -61,7 +61,7 @@
       "experience": 16,
       "city": "کابل",
       "rating": 4.8,
-      "image": "/images/images/doctor4.jpg"
+      "image": "/DoctorCare-/images/images/doctor4.jpg"
     },
     {
       "id": "8",
@@ -70,7 +70,7 @@
       "experience": 19,
       "city": "مزار شریف",
       "rating": 4.6,
-      "image": "/images/images/doctor18.jpg"
+      "image": "/DoctorCare-/images/images/doctor18.jpg"
     },
     {
       "id": "9",
@@ -79,7 +79,7 @@
       "experience": 12,
       "city": "کابل",
       "rating": 4.5,
-      "image": "/images/images/doctor6.jpg"
+      "image": "/DoctorCare-/images/images/doctor6.jpg"
     },
     {
       "id": "10",
@@ -88,7 +88,7 @@
       "experience": 17,
       "city": "هرات",
       "rating": 4.7,
-      "image": "/images/images/doctor15.jpg"
+      "image": "/DoctorCare-/images/images/doctor15.jpg"
     }
   ],
   "appointments": [
@@ -103,6 +103,5 @@
       "reason": "L",
       "id": "HFYUiwGRouE"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }

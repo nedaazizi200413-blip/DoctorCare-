@@ -1,13 +1,4 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:tahoma,sans-serif;
-}
 
-body{
-    background:#f5f8ff;
-}
 
 
 /* ================= HERO ================= */
@@ -682,6 +673,8 @@ font-size:12px;
 
 
 .info{
+    font-size:11px;
+    margin:4px;
+}
 
-font-size:11px;
-margin:4
+}

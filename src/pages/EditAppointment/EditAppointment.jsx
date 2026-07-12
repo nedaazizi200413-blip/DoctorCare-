@@ -17,11 +17,11 @@ time:"",
 reason:""
 });
 useEffect(()=>{
-axios.get(`http://localhost:5000/appointments/${id}`)
+axios.get(`https://doctorcare-api-jr6s.onrender.com/appointments/${id}`)
 .then(res=>{
 setForm(res.data);
 });
-axios.get("http://localhost:5000/doctors")
+axios.get("https://doctorcare-api-jr6s.onrender.com/doctors")
 .then(res=>{
 setDoctors(res.data);
 });
@@ -45,7 +45,7 @@ speciality:doctor?.speciality || ""
 const handleSubmit=(e)=>{
 e.preventDefault();
 axios.put(
-`http://localhost:5000/appointments/${id}`,
+`https://doctorcare-api-jr6s.onrender.com/appointments/${id}`,
 form
 )
 .then(()=>{

@@ -12,7 +12,7 @@ const [doctor,setDoctor]=useState(null);
 
 useEffect(()=>{
 
-axios.get(`http://localhost:5000/doctors/${id}`)
+axios.get(`https://doctorcare-api-jr6s.onrender.com/doctors/${id}`)
 .then(res=>{
 setDoctor(res.data);
 })

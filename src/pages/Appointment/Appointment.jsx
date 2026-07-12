@@ -18,7 +18,7 @@ reason:""
 });
 
 useEffect(()=>{
-axios.get("http://localhost:5000/doctors")
+axios.get("https://doctorcare-api-jr6s.onrender.com/doctors")
 .then(res=>{
 setDoctors(res.data);
 })
@@ -53,7 +53,7 @@ reason:form.reason
 };
 
 axios.post(
-"http://localhost:5000/appointments",
+"https://doctorcare-api-jr6s.onrender.com/appointments",
 newAppointment
 )
 .then(()=>{
