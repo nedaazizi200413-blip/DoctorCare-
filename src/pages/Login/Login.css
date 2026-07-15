@@ -86,3 +86,17 @@ background:red !important;
 .login-box{
 background:yellow !important;
 }
+.login-page{
+    min-height:80vh !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background:red !important;
+}
+
+.login-box{
+    width:380px !important;
+    background:yellow !important;
+    padding:40px !important;
+    border-radius:20px !important;
+}
