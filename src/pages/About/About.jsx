@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import "./About.css";
 
 function About(){
@@ -67,21 +68,14 @@ DoctorCare یک سیستم آنلاین مدرن برای ارتباط میان 
 ما تلاش می‌کنیم خدمات صحی را سریع‌تر، ساده‌تر و قابل دسترس‌تر بسازیم.
 </p>
 
-<a href="/appointments" className="about-btn">
+<Link to="/appointments" className="about-btn">
 <i className="fa-solid fa-calendar-check"></i>
 رزرو نوبت
-</a>
+</Link>
 
 </div>
 
-
-
-
-
 </section>
-
-
-
 <section className="mission">
 
 <h2>
@@ -93,18 +87,12 @@ DoctorCare یک سیستم آنلاین مدرن برای ارتباط میان 
 </p>
 
 </section>
-
-
-
 <section className="how-work">
 
 <h2>
 چگونه کار می‌کند؟
 </h2>
-
-
 <div className="steps">
-
 {
 steps.map((step,index)=>(
 
@@ -202,9 +190,9 @@ features.map((item,index)=>(
 همین حالا داکتر مورد نظر خود را پیدا کنید.
 </p>
 
-<a href="/appointments">
+<Link to="/appointments">
 شروع رزرو نوبت
-</a>
+</Link>
 
 </section>
 

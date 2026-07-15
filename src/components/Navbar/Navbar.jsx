@@ -23,7 +23,7 @@ DoctorCare
 
 <li><Link to="/">خانه</Link></li>
 
-<li><Link to="/appointmentList">نوبت های من</Link></li>
+<li><Link to="/appointmentList">  نوبت ها</Link></li>
 
 <li><Link to="/appointments">‌رزرو نوبت</Link></li>
 

@@ -1,7 +1,9 @@
 import {useEffect,useState} from "react";
 import {useParams,useNavigate} from "react-router-dom";
+import Swal from "sweetalert2";
 import axios from "axios";
 import "./EditAppointment.css";
+
 function EditAppointment(){
 const {id}=useParams();
 const navigate=useNavigate();
@@ -49,8 +51,34 @@ axios.put(
 form
 )
 .then(()=>{
-alert("نوبت آپدیت شد");
+
+Swal.fire({
+title:"نوبت با موفقیت ویرایش شد",
+text:"اطلاعات نوبت شما بروزرسانی گردید.",
+icon:"success",
+confirmButtonText:"باشه",
+confirmButtonColor:"#2563eb",
+background:"#ffffff",
+color:"#1e293b",
+timer:2500,
+timerProgressBar:true
+});
+
+setTimeout(()=>{
 navigate("/appointments");
+},2500);
+
+})
+.catch(()=>{
+
+Swal.fire({
+title:"خطا",
+text:"ویرایش نوبت انجام نشد. دوباره تلاش کنید.",
+icon:"error",
+confirmButtonText:"باشه",
+confirmButtonColor:"#ef4444"
+});
+
 });
 };
 return(

@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import {useEffect,useState} from "react";
 import axios from "axios";
 import "./Home.css";
@@ -5,7 +6,7 @@ import "./Home.css";
 function Home(){
 
 const [doctors,setDoctors]=useState([]);
-
+const [search, setSearch] = useState("");
 useEffect(()=>{
 
 axios.get("https://doctorcare-api-jr6s.onrender.com/doctors")
@@ -20,41 +21,145 @@ console.log(err);
 },[]);
 
 const specialities=[
-"👶 اطفال",
-"❤️ قلب",
-"🦷 دندان",
-"👁️ چشم",
-"🦴 استخوان",
-"🧠 اعصاب",
-"🫁 ریه",
-"🩺 داخله",
-"👂 گوش و گلو",
-"🧘 روانشناسی",
-"🏥 جراحی عمومی",
-"🧴 پوست و زیبایی"
+{
+icon:"fa-solid fa-baby",
+name:"اطفال"
+},
+{
+icon:"fa-solid fa-heart-pulse",
+name:"قلب"
+},
+{
+icon:"fa-solid fa-tooth",
+name:"دندان"
+},
+{
+icon:"fa-solid fa-eye",
+name:"چشم"
+},
+{
+icon:"fa-solid fa-bone",
+name:"استخوان"
+},
+{
+icon:"fa-solid fa-brain",
+name:"اعصاب"
+},
+{
+icon:"fa-solid fa-lungs",
+name:"ریه"
+},
+{
+icon:"fa-solid fa-stethoscope",
+name:"داخله"
+},
+{
+icon:"fa-solid fa-ear-listen",
+name:"گوش و گلو"
+},
+{
+icon:"fa-solid fa-face-smile",
+name:"روانشناسی"
+},
+{
+icon:"fa-solid fa-user-doctor",
+name:"جراحی"
+},
+{
+icon:"fa-solid fa-spa",
+name:"پوست و زیبایی"
+}
 ];
 
+ const filteredDoctors = doctors.filter((doctor) =>
+  doctor.name.toLowerCase().includes(search.toLowerCase()) ||
+  doctor.speciality.toLowerCase().includes(search.toLowerCase())
+);
 return(
 <>
-<section className="hero">
-<div className="hero-image">
-<img src="/images/images/doctor.png" className="hero-img" alt="doctor"/>
+ <section className="hero">
+
+
+<div className="hero-image-box">
+
+<div className="circle"></div>
+
+<img 
+  src="./images/images/doctor.png" 
+  className="hero-img" 
+  alt="doctor"
+/>
+
+
+<div className="floating-card">
+
+<i className="fa-solid fa-user-doctor"></i>
+
+<div>
+<b>داکتر متخصص</b>
+<p>با تجربه و قابل اعتماد</p>
 </div>
-<div className="hero-text">
-<h1>سیستم آنلاین نوبت دهی داکتران</h1>
-<p>بهترین داکتران را پیدا کنید و در چند دقیقه نوبت خود را رزرو نمایید.</p>
-<div className="search-box">
-<input placeholder="نام داکتر یا تخصص"/>
-<button>جستجو</button>
+
 </div>
+
 </div>
+
+
+
+<div className="hero-content">
+
+<span className="hero-badge">
+<i className="fa-solid fa-heart-pulse"></i>
+خدمات صحی آنلاین
+</span>
+
+
+<h1>
+بهترین داکتران را
+<br/>
+در چند دقیقه پیدا کنید
+</h1>
+
+
+<p>
+با DoctorCare به داکتران متخصص دسترسی پیدا کنید
+و نوبت خود را سریع و آسان رزرو نمایید.
+</p>
+
+
+<div className="hero-search">
+
+<input
+type="text"
+placeholder="جستجوی نام داکتر یا تخصص"
+value={search}
+onChange={(e)=>setSearch(e.target.value)}
+/>
+
+<button>
+<i className="fa-solid fa-magnifying-glass"></i>
+جستجو
+</button>
+
+</div>
+
+
+</div>
+
+
 </section>
 
 <section className="specialities">
 {
 specialities.map((item,index)=>(
 <div className="speciality-box" key={index}>
-{item}
+
+<i className={item.icon}></i>
+
+<h3>
+{item.name}
+</h3>
+
 </div>
 ))
 }
@@ -64,7 +169,7 @@ specialities.map((item,index)=>(
 <h2>داکتران محبوب</h2>
 <div className="popular-grid">
 {
-doctors.slice(0,3).map(doctor=>(
+filteredDoctors.slice(0,3).map(doctor=>(
 <div className="doctor-card" key={doctor.id}>
 <img src={doctor.image} alt={doctor.name}/>
 <h3>{doctor.name}</h3>
@@ -80,9 +185,9 @@ doctors.slice(0,3).map(doctor=>(
 <div className="stars">
 ⭐⭐⭐⭐☆ {doctor.rating}
 </div>
-<a href={`/doctor/${doctor.id}`}>
+<Link to={`/doctor/${doctor.id}`}>
 مشاهده پروفایل
-</a>
+</Link>
 </div>
 ))
 }
@@ -95,7 +200,7 @@ doctors.slice(0,3).map(doctor=>(
 <div className="doctor-list">
 
 {
-doctors.map(doctor=>(
+filteredDoctors.map(doctor=>(
 
 <div className="doctor-row" key={doctor.id}>
 
@@ -130,9 +235,9 @@ alt={doctor.name}
 
 </div>
 
-<a href={`/doctor/${doctor.id}`}>
-بیشتر
-</a>
+<Link to={`/doctor/${doctor.id}`}>
+مشاهده پروفایل
+</Link>
 
 </div>
 

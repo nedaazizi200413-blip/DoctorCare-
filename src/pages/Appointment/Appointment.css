@@ -1,108 +1,166 @@
-
 .appointment{
-min-height:75vh;
-padding:50px 20px;
-background:#f4f7ff;
+min-height:80vh;
+padding:60px 20px;
+background:#f1f5ff;
 direction:rtl;
 display:flex;
 flex-direction:column;
 align-items:center;
 }
 
-.appointment h1{
-font-size:32px;
-color:#0441ef;
-margin-bottom:35px;
-font-weight:bold;
+
+.appointment-header{
 text-align:center;
+margin-bottom:35px;
 }
 
+
+.appointment-header i{
+font-size:45px;
+color:#2563eb;
+}
+
+
+.appointment-header h1{
+font-size:32px;
+color:#0f172a;
+margin:15px 0;
+}
+
+
+.appointment-header p{
+color:#64748b;
+}
+
+
+
 .appointment form{
+
 background:white;
 width:100%;
 max-width:600px;
 padding:35px;
 border-radius:25px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+box-shadow:
+0 20px 50px rgba(37,99,235,.12);
+
 display:flex;
 flex-direction:column;
 gap:18px;
+
 }
 
-.appointment input,
-.appointment select,
-.appointment textarea{
-width:100%;
-padding:14px 16px;
-border:1px solid #dbeafe;
-border-radius:12px;
-font-size:15px;
-font-family:inherit;
-outline:none;
+
+
+.input-box{
+
+display:flex;
+align-items:center;
+gap:12px;
+
 background:#f8fafc;
-transition:.3s;
-direction:rtl;
+
+border:1px solid #dbeafe;
+
+border-radius:14px;
+
+padding:0 15px;
+
 }
 
-.appointment input:focus,
-.appointment select:focus,
-.appointment textarea:focus{
-border-color:#2563eb;
-background:white;
-box-shadow:0 0 0 3px rgba(37,99,235,.1);
+
+
+.input-box i{
+
+color:#2563eb;
+font-size:18px;
+
 }
 
-.appointment select{
-cursor:pointer;
+
+
+.input-box input,
+.input-box select,
+.input-box textarea{
+
+border:none;
+outline:none;
+background:transparent;
+
+width:100%;
+
+padding:15px;
+
+font-family:inherit;
+
+font-size:15px;
+
 }
 
-.appointment textarea{
-resize:none;
-height:120px;
+
+
+.textarea{
+
+align-items:flex-start;
+
 }
+
+
+
+.textarea i{
+
+margin-top:15px;
+
+}
+
+
 
 .appointment button{
+
 background:#2563eb;
+
 color:white;
+
 border:none;
-padding:15px;
-border-radius:12px;
+
+padding:16px;
+
+border-radius:14px;
+
 font-size:17px;
-font-family:inherit;
+
 font-weight:bold;
+
 cursor:pointer;
+
 transition:.3s;
+
 }
+
 
 .appointment button:hover{
+
 background:#1d4ed8;
-transform:translateY(-2px);
+
+transform:translateY(-3px);
+
 }
 
-@media(max-width:768px){
 
-.appointment{
-padding:30px 15px;
-}
 
-.appointment h1{
-font-size:25px;
-}
+@media(max-width:600px){
 
 .appointment form{
-padding:22px;
-border-radius:18px;
+
+padding:20px;
+
 }
 
-.appointment input,
-.appointment select,
-.appointment textarea{
-font-size:14px;
-padding:12px;
-}
+.appointment-header h1{
 
-.appointment button{
-font-size:15px;
+font-size:25px;
+
 }
 
 }

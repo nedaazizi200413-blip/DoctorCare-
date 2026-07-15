@@ -37,10 +37,7 @@ DoctorCare
 
 
 <div className="contact-container">
-
-
 <div className="contact-box">
-
 <i className="fa-solid fa-phone"></i>
 
 <div>
@@ -51,13 +48,8 @@ DoctorCare
 <p>
 +93 700 000 000
 </p>
-
 </div>
-
 </div>
-
-
-
 <div className="contact-box">
 
 <i className="fa-solid fa-envelope"></i>
@@ -76,10 +68,7 @@ info@doctorcare.com
 
 </div>
 
-
-
 <div className="contact-box">
-
 <i className="fa-solid fa-location-dot"></i>
 
 <div>
@@ -101,10 +90,7 @@ info@doctorcare.com
 
 
 <section className="working">
-
-
 <div className="working-box">
-
 <i className="fa-solid fa-clock"></i>
 
 <h3>
@@ -120,11 +106,7 @@ info@doctorcare.com
 </p>
 
 </div>
-
-
-
 <div className="working-box">
-
 <i className="fa-solid fa-user-doctor"></i>
 
 <h3>
@@ -136,10 +118,7 @@ info@doctorcare.com
 </p>
 
 </div>
-
-
 <div className="working-box">
-
 <i className="fa-solid fa-shield-heart"></i>
 
 <h3>
@@ -151,12 +130,7 @@ info@doctorcare.com
 </p>
 
 </div>
-
-
 </section>
-
-
-
 <div className="contact-form">
 
 <h2>
@@ -164,19 +138,14 @@ info@doctorcare.com
 </h2>
 
 <form>
-
-
 <input 
 type="text"
 placeholder="نام کامل"
 />
-
-
 <input
 type="email"
 placeholder="ایمیل"
 />
-
 
 <input
 type="text"
@@ -188,8 +157,6 @@ placeholder="شماره تماس"
 rows="6"
 placeholder="پیام خود را بنویسید"
 ></textarea>
-
-
 <button>
 
 <i className="fa-solid fa-paper-plane"></i>
@@ -197,13 +164,9 @@ placeholder="پیام خود را بنویسید"
 ارسال پیام
 
 </button>
-
-
 </form>
 
 </div>
-
-
 <section className="faq">
 
 <h2>

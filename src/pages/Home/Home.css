@@ -1,45 +1,401 @@
 
-
-
-/* ================= HERO ================= */
-
 .hero{
-    display:flex;
-    flex-direction:column-reverse;
-    align-items:center;
-    justify-content:center;
-    padding:40px 20px;
-    gap:20px;
-    background:#f4f7ff;
-    text-align:center;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+padding:70px 8%;
+direction:ltr;
+}
+
+
+.hero-image-box{
+width:45%;
+text-align:center;
+}
+
+
+.hero-content{
+width:50%;
+direction:rtl;
+text-align:right;
+}
+
+.hero-badge{
+
+display:inline-flex;
+align-items:center;
+gap:8px;
+
+background:#dbeafe;
+color:#2563eb;
+
+padding:10px 20px;
+border-radius:30px;
+
+font-weight:bold;
+
+}
+
+
+.hero-content h1{
+
+font-size:52px;
+line-height:1.5;
+
+color:#0f172a;
+
+margin:25px 0;
+
+}
+
+
+.hero-content h1::first-line{
+color:#2563eb;
+}
+
+
+.hero-content p{
+
+font-size:18px;
+line-height:2;
+
+color:#64748b;
+
+max-width:500px;
+
+}
+
+
+.hero-buttons{
+
+display:flex;
+gap:15px;
+margin-top:35px;
+
+}
+
+
+
+.primary-btn,
+.secondary-btn{
+
+padding:15px 30px;
+
+border-radius:15px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+
+
+.primary-btn{
+
+background:#2563eb;
+color:white;
+
+}
+
+
+
+.primary-btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+
+.secondary-btn{
+
+background:white;
+color:#2563eb;
+
+border:1px solid #dbeafe;
+
+}
+
+
+
+.hero-stats{
+
+display:flex;
+gap:35px;
+
+margin-top:45px;
+
+}
+
+
+.hero-stats div{
+
+display:flex;
+flex-direction:column;
+
+}
+
+
+.hero-stats strong{
+
+font-size:28px;
+color:#2563eb;
+
+}
+
+
+.hero-stats span{
+
+color:#64748b;
+
+}
+
+
+
+/* عکس */
+
+.hero-image-box{
+
+width:45%;
+
+position:relative;
+
+text-align:center;
+
 }
 
 
 .hero-img{
-    width:280px;
-    max-width:100%;
+
+width:420px;
+
+max-width:100%;
+
+position:relative;
+
+z-index:2;
+
+filter:drop-shadow(0 20px 30px #2563eb33);
+
 }
 
+
+
+.circle{
+
+position:absolute;
+
+width:450px;
+height:450px;
+
+background:#dbeafe;
+
+border-radius:50%;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+}
+
+
+
+.floating-card{
+
+position:absolute;
+
+bottom:0px;
+left:25px;
+
+background:white;
+
+padding:15px 40px;
+
+border-radius:20px;
+
+display:flex;
+
+gap:15px;
+
+align-items:center;
+
+box-shadow:0 10px 30px #0002;
+
+z-index:3;
+
+}
+
+
+.floating-card i{
+
+font-size:35px;
+color:#2563eb;
+
+}
+
+
+.floating-card p{
+
+margin:5px 0;
+color:#64748b;
+
+}
+
+
+
+/* موبایل */
+
+@media(max-width:768px){
+
+.hero{
+
+flex-direction:column-reverse;
+text-align:center;
+
+}
+
+
+.hero-content,
+.hero-image-box{
+
+width:100%;
+
+}
+
+
+.hero-content h1{
+
+font-size:35px;
+
+}
+
+
+.hero-buttons,
+.hero-stats{
+
+justify-content:center;
+
+}
+
+
+.circle{
+
+width:280px;
+height:280px;
+
+}
+
+}
+
+.hero-search{
+
+display:flex;
+
+margin-top:30px;
+
+background:white;
+
+padding:8px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+max-width:500px;
+
+}
+
+
+.hero-search input{
+
+flex:1;
+
+border:none;
+
+outline:none;
+
+padding:15px;
+
+font-family:tahoma;
+
+font-size:15px;
+
+direction:rtl;
+
+}
+
+
+.hero-search button{
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+padding:15px 25px;
+
+border-radius:14px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+}
+
+
+
+.hero-search button:hover{
+
+background:#1d4ed8;
+
+}
+
+
+
+@media(max-width:768px){
+
+.hero-search{
+
+width:100%;
+
+}
+
+.hero-search button{
+
+padding:12px 18px;
+
+}
+
+}
 
 .hero-text{
     width:100%;
 }
 
-
-.hero h1{
-    font-size:28px;
-    line-height:1.8;
-    color:#2563eb;
+.hero-text h1{
+font-size:42px;
+font-weight:700;
+color:#1e3a8a;
+line-height:1.6;
 }
 
-
-.hero p{
-    margin-top:15px;
-    color:#64748b;
-    line-height:2;
-    font-size:15px;
+.hero-text p{
+font-size:18px;
+color:#64748b;
+margin-top:20px;
+line-height:2;
 }
-
 
 
 /* ================= SEARCH ================= */
@@ -68,18 +424,21 @@
 
 
 .search-box button{
-
-    padding:15px 25px;
-
-    border:none;
-    border-radius:12px;
-
-    background:#2563eb;
-    color:white;
-
-    cursor:pointer;
+background:#2563eb;
+color:white;
+padding:15px 30px;
+border:none;
+border-radius:12px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
 }
 
+.search-box button:hover{
+background:#1d4ed8;
+transform:translateY(-3px);
+}
 
 
 /* ================= SPECIALITIES ================= */
@@ -92,8 +451,8 @@
     display:grid;
 
     grid-template-columns:repeat(3,1fr);
-
-    gap:15px;
+    margin-top: 35px;
+    gap: 15px;
 
 }
 
@@ -131,6 +490,7 @@
 .popular-doctors{
 
     padding:20px;
+    
 
 }
 
@@ -138,7 +498,7 @@
 .popular-doctors h2{
 
     text-align:center;
-
+    
     margin:20px 0;
 
     color:#1e293b;
@@ -210,15 +570,14 @@
 
 
 .info{
-
-    margin-top:10px;
-
-    color:#475569;
-
-    font-size:14px;
-
+display:flex;
+justify-content:flex-start;
+align-items:center;
+gap:8px;
+margin:8px 0;
+color:#444;
+direction:rtl;
 }
-
 
 .stars{
 
@@ -675,6 +1034,323 @@ font-size:12px;
 .info{
     font-size:11px;
     margin:4px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+padding:40px 20px;
+}
+
+.hero-text h1{
+font-size:28px;
+}
+
+.hero-text p{
+font-size:15px;
+}
+
+.hero-img{
+width:280px;
+}
+
+}
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+}
+
+
+.hero-image-box,
+.hero-content{
+width:100%;
+}
+
+
+.hero-content{
+text-align:center;
+}
+
+}
+
+.popular-doctors{
+padding:40px 6%;
+direction:rtl;
+background:#f8fbff;
+}
+
+
+.popular-doctors h2,
+.other-doctors h2{
+
+text-align:center;
+font-size:32px;
+color:#0f172a;
+margin-bottom:40px;
+
+}
+
+
+
+.popular-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+
+
+.doctor-card{
+
+background:white;
+
+border-radius:25px;
+
+padding:25px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.3s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+
+.doctor-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(37,99,235,.15);
+
+}
+
+
+
+.doctor-card img{
+
+width:130px;
+
+height:130px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:5px solid #dbeafe;
+
+margin-bottom:15px;
+
+}
+
+
+
+.doctor-card h3{
+
+font-size:22px;
+
+color:#1e293b;
+
+margin-bottom:8px;
+
+}
+
+
+
+.doctor-card p{
+
+color:#64748b;
+
+margin-bottom:15px;
+
+}
+
+
+
+.info{
+
+display:flex;
+
+align-items:center;
+
+justify-content:flex-start;
+
+gap:10px;
+
+direction:rtl;
+
+color:#475569;
+
+margin:10px 0;
+
+font-size:14px;
+
+}
+
+
+
+.info i{
+
+color:#2563eb;
+
+font-size:16px;
+
+}
+
+
+
+.stars{
+
+background:#fff7ed;
+
+color:#f59e0b;
+
+padding:8px 12px;
+
+border-radius:20px;
+
+display:inline-block;
+
+margin:15px 0;
+
+}
+
+
+
+.doctor-card a{
+
+display:block;
+
+background:#2563eb;
+
+color:white;
+
+text-decoration:none;
+
+padding:12px;
+
+border-radius:12px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+
+
+.doctor-card a:hover{
+
+background:#1d4ed8;
+
+}
+@media(max-width:768px){
+
+.popular-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.popular-doctors h2,
+.other-doctors h2{
+
+font-size:25px;
+
+}
+
+}
+.specialities{
+
+padding:60px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(6,1fr);
+
+gap:20px;
+
+direction:rtl;
+
+}
+
+
+.speciality-box{
+
+background:white;
+
+border-radius:20px;
+
+padding:15px 10px;
+
+text-align:center;
+
+box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+transition:.3s;
+
+cursor:pointer;
+
+}
+
+
+.speciality-box i{
+
+font-size:35px;
+
+color:#2563eb;
+
+margin-bottom:15px;
+
+}
+
+
+
+.speciality-box h3{
+
+font-size:16px;
+
+color:#334155;
+
+}
+
+
+
+.speciality-box:hover{
+
+transform:translateY(-8px);
+
+background:#2563eb;
+
+}
+
+
+
+.speciality-box:hover i,
+.speciality-box:hover h3{
+
+color:white;
+
+}
+@media(max-width:768px){
+
+.specialities{
+
+grid-template-columns:repeat(2,1fr);
+
+padding:40px 20px;
+
 }
 
 }

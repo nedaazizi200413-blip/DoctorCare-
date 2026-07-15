@@ -30,17 +30,12 @@ return(
 <span>رزرو نوبت</span>
 </Link>
 
-
 <Link to="/appointmentList">
 <i className="fa-solid fa-clock"></i>
-<span>نوبت‌های من</span>
+<span>نوبت‌ها </span>
 </Link>
 
-
 </div>
-
 )
-
 }
-
 export default BottomNav;
