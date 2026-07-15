@@ -26,7 +26,7 @@ navigate("/appointmentList");
 
 return(
 
-<section className="login-page test-login">
+<section className="login-page">
 
 <div className="login-box">
 
