@@ -2,7 +2,7 @@ import {useEffect,useState} from "react";
 import axios from "axios";
 import {Link} from "react-router-dom";
 import "./AppointmentList.css";
-
+import Swal from "sweetalert2";
 
 function AppointmentList(){
 
@@ -42,77 +42,40 @@ title:"آیا مطمئن هستید؟",
 text:"این نوبت حذف خواهد شد و قابل برگشت نیست.",
 
 icon:"warning",
-
 showCancelButton:true,
-
 confirmButtonText:"بله، حذف شود",
-
 cancelButtonText:"انصراف",
-
 confirmButtonColor:"#ef4444",
-
 cancelButtonColor:"#64748b",
-
 background:"#ffffff",
-
 color:"#1e293b"
 
 }).then((result)=>{
-
-
 if(result.isConfirmed){
-
 
 axios.delete(
 `https://doctorcare-api-jr6s.onrender.com/appointments/${id}`
 )
 
 .then(()=>{
-
-
 setAppointments(
 appointments.filter(a=>a.id!==id)
 );
-
-
-
 Swal.fire({
-
 title:"حذف شد",
-
 text:"نوبت با موفقیت حذف گردید.",
-
 icon:"success",
-
 confirmButtonText:"باشه",
-
 confirmButtonColor:"#2563eb",
-
 timer:2000,
-
 timerProgressBar:true
 
 });
-
-
 });
-
-
 }
-
-
 });
-
 
 };
-
-
-
-
-
-
-
-
 
 return(
 
