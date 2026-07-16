@@ -1,22 +1,20 @@
 .login-page{
-min-height:80vh;
+min-height:calc(100vh - 160px);
 display:flex;
-align-items:center;
 justify-content:center;
-background:#f1f5f9;
+align-items:center;
+padding:40px 20px;
+background: #ffffff;
 direction:rtl;
 }
 
-
 .login-box{
-
-width:380px;
-background:white;
+width:100%;
+max-width:420px;
+background:#fff;
 padding:40px;
 border-radius:20px;
-box-shadow:0 10px 30px #0002;
-text-align:center;
-
+box-shadow:0 10px 30px rgba(0,0,0,.12);
 }
 
 
@@ -78,25 +76,4 @@ padding:30px;
 
 }
 
-}
-.login-page{
-background:red !important;
-}
-
-.login-box{
-background:yellow !important;
-}
-.login-page{
-    min-height:80vh !important;
-    display:flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-    background:red !important;
-}
-
-.login-box{
-    width:380px !important;
-    background:yellow !important;
-    padding:40px !important;
-    border-radius:20px !important;
 }
