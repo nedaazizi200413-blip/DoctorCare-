@@ -56,7 +56,7 @@ Swal.fire({
 title:"نوبت با موفقیت ویرایش شد",
 text:"اطلاعات نوبت شما بروزرسانی گردید.",
 icon:"success",
-confirmButtonText:"باشه",
+confirmButtonText:"OK",
 confirmButtonColor:"#2563eb",
 background:"#ffffff",
 color:"#1e293b",
@@ -75,7 +75,7 @@ Swal.fire({
 title:"خطا",
 text:"ویرایش نوبت انجام نشد. دوباره تلاش کنید.",
 icon:"error",
-confirmButtonText:"باشه",
+confirmButtonText:"OK",
 confirmButtonColor:"#ef4444"
 });
 

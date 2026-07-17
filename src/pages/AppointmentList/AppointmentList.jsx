@@ -173,20 +173,10 @@ alt={doctorInfo?.name}
 {doctorInfo?.speciality || "تخصص مشخص نیست"}
 
 </p>
-
-
 </div>
-
-
 </div>
-
-
-
-
 
 <div className="patient-info">
-
-
 <p>
 
 <i className="fa-solid fa-user"></i>
@@ -194,9 +184,6 @@ alt={doctorInfo?.name}
 {a.patient_name}
 
 </p>
-
-
-
 <p>
 
 <i className="fa-solid fa-phone"></i>
@@ -204,9 +191,6 @@ alt={doctorInfo?.name}
 {a.phone}
 
 </p>
-
-
-
 <p>
 
 <i className="fa-solid fa-calendar-days"></i>
@@ -214,9 +198,6 @@ alt={doctorInfo?.name}
 {a.date}
 
 </p>
-
-
-
 <p>
 
 <i className="fa-solid fa-clock"></i>
@@ -224,9 +205,6 @@ alt={doctorInfo?.name}
 {a.time}
 
 </p>
-
-
-
 <p>
 
 <i className="fa-solid fa-notes-medical"></i>
@@ -235,14 +213,7 @@ alt={doctorInfo?.name}
 
 </p>
 
-
-
 </div>
-
-
-
-
-
 
 <div className="action-buttons">
 
@@ -252,61 +223,28 @@ alt={doctorInfo?.name}
 to={`/edit/${a.id}`}
 
 className="btn btn-edit"
-
 >
-
 <i className="fa-solid fa-pen"></i>
 
 ویرایش
 
 </Link>
-
-
-
-
-
 <button
 
 className="btn btn-delete"
 
 onClick={()=>deleteAppointment(a.id)}
-
 >
-
 <i className="fa-solid fa-trash"></i>
-
 حذف
-
 </button>
-
-
-
 </div>
-
-
-
-
 </div>
-
-
 )
-
-
 })
-
-
 }
-
-
 </div>
-
-
 </section>
-
-
 )
-
 }
-
-
 export default AppointmentList;
